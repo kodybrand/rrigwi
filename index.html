@@ -1,274 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ridge Runner of Iowa Grant</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
-    />
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5 {
-        font-family: "Poppins", sans-serif;
-      }
-      body {
-        font-size: 16px;
-      }
-      .w3-half img {
-        margin-bottom: -6px;
-        margin-top: 16px;
-        opacity: 0.8;
-        cursor: pointer;
-      }
-      .w3-half img:hover {
-        opacity: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Sidebar/menu -->
-    <nav
-      class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding"
-      style="z-index: 3; width: 300px; font-weight: bold"
-      id="mySidebar"
-    >
-      <br />
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-button w3-hide-large w3-display-topleft"
-        style="width: 100%; font-size: 22px"
-        >Close Menu</a
-      >
-      <div class="w3-container">
-        <h3 class="w3-padding-64">
-          <b
-            ><img
-              src="/images/rr-logo-large.png"
-              alt="Ridge Runner of Iowa Grant"
-              class="w3-image"
-          /></b>
-        </h3>
-      </div>
-      <div class="w3-bar-block">
-        <a
-          href="#"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Home</a
-        >
-        <a
-          href="#meetings"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Meetings</a
-        >
-        <a
-          href="#membership"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Membership</a
-        >
-        <a
-          href="#maps"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Maps</a
-        >
-        <a
-          href="#contact"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Contact</a
-        >
-      </div>
-    </nav>
 
-    <!-- Top menu on small screens -->
-    <header
-      class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding"
-    >
-      <a
-        href="javascript:void(0)"
-        class="w3-button w3-red w3-margin-right"
-        onclick="w3_open()"
-        >☰</a
-      >
-      <span class="w3-medium">Ridge Runner of Iowa Grant</span>
-    </header>
+<head>
+  <title>Ridge Runner of Iowa Grant</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif;
+    }
 
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div
-      class="w3-overlay w3-hide-large"
-      onclick="w3_close()"
-      style="cursor: pointer"
-      title="close side menu"
-      id="myOverlay"
-    ></div>
+    body {
+      font-size: 16px;
+    }
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
-      <!-- Header -->
-      <div class="w3-container" style="margin-top: 80px" id="showcase">
-        <h1 class="w3-jumbo">
-          <b
-            ><img
-              src="/images/rr-black-large.png"
-              alt="Ridge Runner of Iowa Grant"
-              class="w3-image w3-display-topmiddle"
-              style="width: 100%; max-width: 400px; margin-top: 25px"
-          /></b>
-        </h1>
-        <h1 class="w3-xxxlarge w3-text-red"><b>About..</b></h1>
-        <hr
-          style="width: 50px; border: 5px solid rgb(63, 63, 63)"
-          class="w3-round"
-        />
-        <p>
-          A Non-Profit with a goal to encourage and develop private and public
-          routes for ATV/UTV use locally.
-        </p>
-      </div>
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer;
+    }
 
-      <!-- Meetings -->
-      <div class="w3-container" id="meetings" style="margin-top: 75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Meetings.</b></h1>
-        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+    .w3-half img:hover {
+      opacity: 1;
+    }
 
-        <p>
-          Meetings are held on the second Monday of most months, typically from
-          April through October. Everyone is welcome to attend. Members who
-          attend will receive a ticket for a drawing to win one of two $20 gift
-          certificates.
-        </p>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
 
-        <h3>Typical Meeting Agenda:</h3>
-        <ul>
-          <li>Review of last month's minutes</li>
-          <li>Financial report</li>
-          <li>New business/updates</li>
-          <li>Adjourn</li>
-          <li>Attendance drawing</li>
-        </ul>
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding"
+    style="z-index: 3; width: 300px; font-weight: bold" id="mySidebar">
+    <br />
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64">
+        <b><img src="/images/rr-logo-large.png" alt="Ridge Runner of Iowa Grant" class="w3-image" /></b>
+      </h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#meetings" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Meetings</a>
+      <a href="#membership" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Membership</a>
+      <a href="#maps" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Maps</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    </div>
+  </nav>
 
-        <h3>Meeting Minutes:</h3>
-        <ul>
-          <li>Coming Soon.</li>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span class="w3-medium">Ridge Runner of Iowa Grant</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Main content -->
+  <main class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <section id="showcase" class="w3-container" style="margin-top: 80px">
+      <h1 class="w3-jumbo">
+        <b><img src="/images/rr-black-large.png" alt="Ridge Runner of Iowa Grant" class="w3-image w3-display-topmiddle"
+            style="width: 100%; max-width: 400px; margin-top: 25px" /></b>
+      </h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>About..</b></h1>
+      <hr style="width: 50px; border: 5px solid rgb(63, 63, 63)" class="w3-round" />
+      <p>
+        A Non-Profit with a goal to encourage and develop private and public
+        routes for ATV/UTV use locally.
+      </p>
+    </section>
+
+    <!-- Meetings -->
+    <section id="meetings" class="w3-container" style="margin-top: 75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Meetings.</b></h1>
+      <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+
+      <p>
+        Meetings are held on the second Monday of most months, typically from
+        April through October. Everyone is welcome to attend. Members who
+        attend will receive a ticket for a drawing to win one of two $20 gift
+        certificates.
+      </p>
+
+      <h3>Typical Meeting Agenda:</h3>
+      <ul>
+        <li>Review of last month's minutes</li>
+        <li>Financial report</li>
+        <li>New business/updates</li>
+        <li>Adjourn</li>
+        <li>Attendance drawing</li>
+      </ul>
+
+      <h3>Meeting Minutes:</h3>
+      <ul>
+        <li>Coming Soon.</li>
+      </ul>
+    </section>
+
+    <!-- Membership -->
+    <section id="membership" class="w3-container" style="margin-top: 75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Membership.</b></h1>
+      <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+      <p><b>**New membership application for the 2025/2026 session now available!**</b></p>
+      <p>
+        Effective from the 2025/2026 session, the Family membership has been
+        discontinued. The Individual membership fee has been reduced to $10
+        per year. The Business membership now requires two $20 gift cards,
+        which will be distributed at monthly meetings to attending members.
+      </p>
+    </section>
+
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Individual</li>
+          <li class="w3-padding-16">Single Member</li>
+          <li class="w3-padding-16">1 Year Membership</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per year</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5M9KbtYa889mzJ4qaxxTCAEMYQ9s8w0GYmszPKPdSfoV40g/viewform?usp=sharing"
+              class="w3-button w3-white w3-padding-large w3-hover-black">Apply Online</a>
+          </li>
         </ul>
       </div>
 
-      <!-- Packages / Pricing Tables -->
-      <div class="w3-container" id="membership" style="margin-top: 75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Membership.</b></h1>
-        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
-        <p><b>**New session membership application now available!**</b></p>
-        <p>
-          Effective from the 2025/2026 session, the Family membership has been
-          discontinued. The Individual membership fee has been reduced to $10
-          per year. The Business membership now requires two $20 gift cards,
-          which will be distributed at monthly meetings to attending members.
-        </p>
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-red w3-xlarge w3-padding-32">Business Sponsor</li>
+          <li class="w3-padding-16">1 Year Membership</li>
+          <li class="w3-padding-16">Added to Business Sponsors Page</li>
+          <li class="w3-padding-16">
+            <h2>2 X $20 Gift Certificates</h2>
+            <span class="w3-opacity">per year</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5M9KbtYa889mzJ4qaxxTCAEMYQ9s8w0GYmszPKPdSfoV40g/viewform?usp=sharing"
+              class="w3-button w3-red w3-padding-large w3-hover-black">Apply Online</a>
+          </li>
+        </ul>
       </div>
-
-      <div class="w3-row-padding">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-light-grey w3-center">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Individual</li>
-            <li class="w3-padding-16">Single Member</li>
-            <li class="w3-padding-16">1 Year Membership</li>
-            <li class="w3-padding-16">
-              <h2>$ 10</h2>
-              <span class="w3-opacity">per year</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button
-                class="w3-button w3-white w3-padding-large w3-hover-black"
-              >
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5M9KbtYa889mzJ4qaxxTCAEMYQ9s8w0GYmszPKPdSfoV40g/viewform?usp=sharing">Apply Online</a>
-              </button>
-            </li>
-          </ul>
-        </div>
-
-        <div class="w3-half">
-          <ul class="w3-ul w3-light-grey w3-center">
-            <li class="w3-red w3-xlarge w3-padding-32">Business Sponsor</li>
-            <li class="w3-padding-16">1 Year Membership</li>
-            <li class="w3-padding-16">Added to Business Sponsors Page</li>
-            <li class="w3-padding-16">
-              <h2>2 X $20 Gift Certificates</h2>
-              <span class="w3-opacity">per year</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-red w3-padding-large w3-hover-black">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5M9KbtYa889mzJ4qaxxTCAEMYQ9s8w0GYmszPKPdSfoV40g/viewform?usp=sharing">Apply Online</a>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Maps -->
-      <div class="w3-container" id="maps" style="margin-top: 75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Maps.</b></h1>
-        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
-
-        <p>
-          Before heading out, ensure you're aware of which roads are open to
-          ATV/UTV traffic and always follow state and local laws while riding.
-          Below is a link to the most up-to-date maps from Iowa County.
-        </p>
-
-        <a
-          href="https://www.iowacounty.org/media/Departments/Highway%20Department/2024_ATV-UTV%20Route%20Map.pdf"
-          >Iowa County Map</a
-        >
-      </div>
-
-      <!-- Contact -->
-      <div class="w3-container" id="contact" style="margin-top: 75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-        <hr style="width: 50px; border: 5px solid red" class="w3-round" />
-        <p>
-          <b>Email:</b>
-          <a href="mailto:president.rrig@gmail.com">president.rrig@gmail.com</a
-          ><br />
-          <b>Follow us on Facebook:</b>
-          <a href="https://www.facebook.com/RRIGATV"
-            >https://www.facebook.com/RRIGATV</a
-          >
-        </p>
-      </div>
-
-      <!-- End page content -->
     </div>
 
-    <script>
-      // Script to open and close sidebar
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-      }
+    <!-- Maps -->
+    <section id="maps" class="w3-container" style="margin-top: 75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Maps.</b></h1>
+      <hr style="width: 50px; border: 5px solid red" class="w3-round" />
 
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-      }
+      <p>
+        Before heading out, ensure you're aware of which roads are open to
+        ATV/UTV traffic and always follow state and local laws while riding.
+        Below is a link to the most up-to-date maps from Iowa County.
+      </p>
 
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
-    </script>
-  </body>
+      <a href="https://www.iowacounty.org/media/Departments/Highway%20Department/2024_ATV-UTV%20Route%20Map.pdf"
+        target="_blank" title="Iowa County ATV/UTV Route Map">Iowa County Map</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="w3-container" style="margin-top: 75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+      <hr style="width: 50px; border: 5px solid red" class="w3-round" />
+      <p>
+        <b>Email:</b>
+        <a href="mailto:president.rrig@gmail.com">president.rrig@gmail.com</a><br />
+        <b>Follow us on Facebook:</b>
+        <a href="https://www.facebook.com/RRIGATV" target="_blank">https://www.facebook.com/RRIGATV</a>
+      </p>
+    </section>
+  </main>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+</body>
+
 </html>
